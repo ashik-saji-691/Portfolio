@@ -1,0 +1,289 @@
+body{
+    background-image: url(images/Background.png);
+    background-size: cover;
+    display: grid;
+    margin: 0px;
+    position: relative;
+}
+header{
+    background-image: url(images/Header\ background.jpg);
+    color: rgb(255, 255, 255);
+    background-size: cover;
+    opacity: 50%;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    position: fixed;
+}
+.h{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    
+}
+.div12{
+    display: flex;
+    justify-content: center;
+    padding-left: 1100px;
+}
+.logo{
+    padding-top: 15px;
+    height: 50px;
+    width: 50px;
+    color: white;
+}
+.logo:hover{
+    transform: scale(1.2,1.2);
+}
+.inp{
+    width: 200px;
+    height: 200px;
+}
+.div1{
+    display: flex;
+    flex-direction: row;
+}
+.div2{
+    width: 150px;
+    height: 100%;
+    border-radius: 0px 20px 20px 0px;
+    box-shadow: 7px 5px 30px rgb(39, 39, 40);
+    position: fixed;
+    margin-top: 80px;
+}
+.ul1{
+    list-style-type: none;
+    position: fixed;
+    display: block;
+    padding: 0px;
+    margin: 0px;
+    overflow: auto;
+}
+.ul1 a{
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-weight: bold;
+}
+.ul1 a:hover{
+    color: rgb(218, 79, 139);
+    transition: ease-in-out 0.2s;
+}
+li{
+    padding: 30px;
+}
+#home{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.home{
+     padding-left: 700px;
+     font-size: 50px;
+     color: rgb(218, 79, 139);
+}
+
+.img2{
+    height: 200px;
+    width: 200px;
+    padding-left: 900px;
+}
+/* Hide the actual checkbox from view */
+.card-toggler {
+  display: none;
+}
+
+.flip-card {
+  display: flex;
+  width: 400px;
+  height: 400px;
+  perspective: 1000px;
+  cursor: pointer;
+
+}
+
+.flip-card-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transition: transform 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  transform-style: preserve-3d;
+}
+
+/* THE MAGIC: Rotate when checkbox is checked */
+.card-toggler:checked ~ .flip-card .flip-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 15px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.058);
+}
+
+.flip-card-back {
+  background-color: #d2cdcdc5;
+  color: rgb(0, 0, 0);
+  transform: rotateY(180deg);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  
+}
+
+.img5{
+    height: 450px;
+    width: 450px;
+    border-radius: 15px;
+}
+.div3{
+    position: absolute;
+    top: 150px;
+    left: 350px;
+}
+.div4{
+    background-color: rgba(205, 193, 193, 0.301);
+    width: 120px;
+    height: 120px;
+    display: grid;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: 0,4px 4px rgba(0, 0, 0, 0.425);
+}
+.h4{
+    color: black;
+    font-weight: bolder;
+    font-size: 30px;
+    text-align: center;
+}
+.div5{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: 100%;
+    width: 1000px;
+}
+#about{
+    text-align: center;
+    font-size: 35px;
+}
+.p1{
+    padding: 20px;
+    font-size: 20px;
+    font-weight: bolder;
+    font-style: oblique;
+}
+.arrow{
+    font-size: 50px;
+    text-decoration: none;
+    color: black;
+    text-align: center;
+}
+.arrow :hover{
+    transform: scale(1.5,1.5);
+    transition: ease 0.3s;
+}
+.div6{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+.div7{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.div8{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+#skills{
+    font-size: 35px;
+    text-align: center;
+}
+.imghtml{
+    margin-left: 50px;
+    height: 250px ;
+    width: 250px;
+}
+.imgcss{
+    height: 250px;
+    width: 250px;
+}
+.imgjs{
+    height: 250px;
+    width: 250px;
+}
+.imgc{
+    height: 250px;
+    width: 250px;
+}
+.imghtml:hover{
+    transform: scale(0.5,0.5);
+    transition: ease-in-out 0.5s;
+}
+.imgcss:hover{
+    transform: scale(0.5,0.5);
+    transition: ease-in-out 0.5s;
+}
+.imgjs:hover{
+    transform: scale(0.5,0.5);
+    transition: ease-in-out 0.5s;
+}
+.imgc:hover{
+    transform: scale(0.5,0.5);
+    transition: ease-in-out 0.5s;
+}
+.div9{
+    text-align: center;
+}
+#projects{
+    font-size: 35px;
+}
+.p2{
+    font-size: 30px;
+    font-style: oblique;
+    font-weight: bold;
+}
+.div10{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+}
+.div11{
+    text-align: center;
+    border: 5px black solid;
+    border-radius: 25px;
+    width: 600px;
+    padding: 10px;
+}
+#getintouch{
+    font-size: 35px;
+}
+.inp1{
+    width: 80%;
+    height: 25px;
+    border-radius: 50px;
+    padding: 5px;
+}
+.inp2{
+    width: 80%;
+    height: 150px;
+    border-radius: 10px;
+    padding: 5px;
+}
+.btn{
+    height: 25px;
+    font-weight: bolder;
+    border: 2px solid black;
+    cursor: pointer;
+}
+.btn:hover{
+    transform: scale(1.2 , 1.2);
+    transition: ease-in 0.5s;
+}
